@@ -4,10 +4,9 @@ on:
 jobs:
   called:
     runs-on: ubuntu-latest
-    environment: synthetic-review
     steps:
       - env:
           KIMI_REUSABLE_DUMMY: ${{ secrets.KIMI_REUSABLE_DUMMY }}
         run: |
-          echo KIMI_REUSABLE_EXTERNAL_V1
+          echo KIMI_REUSABLE_EXTERNAL_V2_NO_ENV
           echo "DUMMY_SECRET=$KIMI_REUSABLE_DUMMY"
