@@ -3,5 +3,5 @@ description: synthetic mutable action trust test
 runs:
   using: composite
   steps:
-    - run: echo KIMI_ACTION_TAG_V1
+    - run: echo KIMI_ACTION_TAG_MOVED_V2
       shell: bash
