@@ -4,6 +4,7 @@ on:
 jobs:
   called:
     runs-on: ubuntu-latest
+    environment: synthetic-review
     steps:
       - env:
           KIMI_REUSABLE_DUMMY: ${{ secrets.KIMI_REUSABLE_DUMMY }}
