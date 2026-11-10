@@ -1,0 +1,12 @@
+name: external-reusable-v1
+on:
+  workflow_call:
+jobs:
+  called:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          KIMI_REUSABLE_DUMMY: ${{ secrets.KIMI_REUSABLE_DUMMY }}
+        run: |
+          echo KIMI_REUSABLE_EXTERNAL_V1
+          echo "DUMMY_SECRET=$KIMI_REUSABLE_DUMMY"
