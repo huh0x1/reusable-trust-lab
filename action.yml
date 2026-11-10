@@ -1,0 +1,7 @@
+name: mutable-action-lab
+description: synthetic mutable action trust test
+runs:
+  using: composite
+  steps:
+    - run: echo KIMI_ACTION_TAG_V1
+      shell: bash
